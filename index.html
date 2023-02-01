@@ -1,10 +1,29 @@
 <html>
+  <script>
+    function show(){
+      var inp = myform.inputbox.value;
+      if(inp == "好"){
+        alert("谢谢你，感谢有你");
+      }else if(inp == "不好"){
+           alert("好吧，我会努力的");
+      }else{
+           alert("？？？");
+      }
+   }
+    </script>
   <head>
     <title>TMX的主页</title>
   </head>
-  <h1>
-    hello!!!
-  </h1>
-
-
+  <body>
+    <h1>
+      hello!!!
+    </h1>
+        <form name="myform">
+          <p style="font-size:35px; text-align: center;">powerint dos t23版本导航页</p>
+          <a href="https://gitee.com/space_Tkj_TMX_space/powerint-t23">访问仓库</a>
+          <br/>
+          <input type="text" id="inputbox" name="box" value="系统好吗?"/>
+          <button onclick="show()">enter</button>
+      </form>
+  </body>
 </html>
